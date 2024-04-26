@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AES 256-Bit Encryption</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+        <h1>AES 256-Bit Encryption</h1>
+        <p><i><b>Instructions: </b></i>Enter the message you would like to encrypt in the "Enter your message" box. Enter your encryption key in the "Enter your encryption key" box. Then click "encrypt". To decrypt a message, input its encryption key, and enter the encrypted text in the "Encrypted Message" box. Then click "Decrypt."</p>
+        <p><i><b>Proper Formatting: </b></i>The subject (title) of your email should be the encryption key. The body of the email should contain the encrypted text.</p>
+        <p><i><b>Important: Although using letters for the encryption key may be possible, it has been known to cause bugs in the past. Please use numbers only for your encryption key.</b></i></p>
+        <label for="message">Enter your message:</label>
+        <input placeholder="This is the message that will be encrypted." size="100" type="text" id="message" name="message">
+        <br>
+        <label for="key">Enter your encryption key:</label>
+        <input placeholder="This is the key you'll need to encrypt your text. You'll also need it to decrypt." size="100" type="text" id="key" name="key">
+        <br>
+        <button onclick="encrypt()">Encrypt</button>
+        <!--<button onclick="decrypt()">Decrypt</button>-->
+        <hr>
+        <p>Encrypted Message:</p>
+        <textarea placeholder="Once you've encrypted your message, it will show up here. This text box is also used for entering encrypted messages that you would like to decrypt." style="overflow:auto;resize:none" id="encryptedMessage" rows="10" cols="50"></textarea>
+        <br>
+        <button onclick="decrypt()">Decrypt</button>
+        
+        <br>
+        <!--<label for="decryptedMessage">Decrypted Message:</label>-->
+        <p>Decrypted Message:</p>
+        <textarea placeholder="Your decrypted message will be shown here." style="overflow:auto;resize:none" id="decryptedMessage" rows="10" cols="50" ></textarea>
+    <!--</center>-->
+    <script>
+        function encrypt() {
+            var message = document.getElementById("message").value;
+            var key = document.getElementById("key").value;
+            var encryptedMessage = CryptoJS.AES.encrypt(message, key).toString();
+            document.getElementById("encryptedMessage").value = encryptedMessage;
+        }
+
+        function decrypt() {
+            var encryptedMessage = document.getElementById("encryptedMessage").value;
+            var key = document.getElementById("key").value;
+            var decryptedMessage = CryptoJS.AES.decrypt(encryptedMessage, key).toString(CryptoJS.enc.Utf8);
+            document.getElementById("decryptedMessage").value = decryptedMessage;
+        }
+    </script>
+</body>
+</html>
