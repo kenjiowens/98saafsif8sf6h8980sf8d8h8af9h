@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Misconfigured - FreeSQL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .formtitle {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input {
+            margin-bottom: 15px;
+        }
+
+        .inputtext {
+            font-weight: bold;
+        }
+
+        .inputcontent input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .orangebutton {
+            background-color: orange;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .orangebutton:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="./guesswhat/JS/LoginInfo.js"></script>
+
+<div class="wrapper">
+    <form class="form1" action="http://google.com">
+        <div class="formtitle">
+            Blizzard Login
+        </div>
+
+        <div class="input nobottomborder">
+            <div class="inputtext">
+                Username:
+            </div>
+
+            <div class="inputcontent">
+                <input id="username" /><br />
+            </div>
+
+            <div class="inputtext">
+                Password:
+            </div>
+
+            <div class="inputcontent">
+                <input type="password" id="passcode" /><br />
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input class="orangebutton" type="button" value="Login" onclick="checkUser()" />
+        </div>
+    </form>
+</div>
+<br>
+    </body>
+</html>
