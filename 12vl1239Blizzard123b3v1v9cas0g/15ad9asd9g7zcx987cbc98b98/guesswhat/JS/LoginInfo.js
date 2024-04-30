@@ -1,3 +1,4 @@
+//funny joke
 function guestUserJoke(){
     location.href = "https://cnofppzafzyv.github.io/98saafsif8sf6h8980sf8d8h8af9h/12vl1239Blizzard123b3v1v9cas0g/15ad9asd9g7zcx987cbc98b98/guesswhat/guestaV12519x12eJv01jeAsd91jaS09190Xxx/burgerwopperwithUturnSignsForLifeonchair/index.html";  
     //https://cnofppzafzyv.github.io/98saafsif8sf6h8980sf8d8h8af9h/12vl1239Blizzard123b3v1v9cas0g/15ad9asd9g7zcx987cbc98b98/login.html
@@ -71,6 +72,7 @@ function guestUserJoke(){
           return false;
         }
       }
+      //guest
       if(document.getElementById('username').value == 'guest'){
         if(document.getElementById('passcode').value == 'guest'){
           location.href = "https://cnofppzafzyv.github.io/98saafsif8sf6h8980sf8d8h8af9h/12vl1239Blizzard123b3v1v9cas0g/15ad9asd9g7zcx987cbc98b98/guesswhat/guestaV12519x12eJv01jeAsd91jaS09190Xxx/burgerwopperwithUturnSignsForLifeonchair/index.html";  
@@ -79,7 +81,9 @@ function guestUserJoke(){
           return false;
         }
       }
-    
+
+
+      //This is the fake out page
         if(document.getElementById('username').value != 'kenjiowen3'){
           if(document.getElementById('username').value != 'LitleGecki10'){
             if(document.getElementById('username').value != 'supernova'){
