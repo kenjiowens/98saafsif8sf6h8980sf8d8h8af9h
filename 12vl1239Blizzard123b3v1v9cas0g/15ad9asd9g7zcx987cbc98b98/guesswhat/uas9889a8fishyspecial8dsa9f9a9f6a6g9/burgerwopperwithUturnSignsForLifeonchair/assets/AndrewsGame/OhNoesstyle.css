@@ -1,0 +1,5 @@
+    /* resets the button styling */
+    button {
+        all: unset;
+        cursor: pointer;
+      }
