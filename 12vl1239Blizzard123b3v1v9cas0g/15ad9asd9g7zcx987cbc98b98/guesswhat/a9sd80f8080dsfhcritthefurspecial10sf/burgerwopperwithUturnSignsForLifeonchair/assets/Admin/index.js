@@ -18,13 +18,18 @@ function create() {
 var password;
 var pass1="fishy";
 password=prompt('Enter Password To View Page','');
-if (password==pass1) {
+if (password!=pass1){
+    alert("NO! Here's your punishment.");
+    window.location = "https://classroom.google.com";
+}
+
+/*if (password==pass1) {
     //alert('Correct password, Click OK to enter');
 }
 else {
     alert('Wrong, try again');
     window.location="https://classroom.google.com"
-};
+};*/
 
 const data = JSON.stringify({ action: 'close',
  when: +new Date
