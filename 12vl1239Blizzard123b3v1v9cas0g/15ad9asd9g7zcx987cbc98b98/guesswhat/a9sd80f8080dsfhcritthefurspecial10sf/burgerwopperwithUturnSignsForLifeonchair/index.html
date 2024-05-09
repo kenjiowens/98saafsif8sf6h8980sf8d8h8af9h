@@ -96,12 +96,16 @@
           document.onmousemove = null;
         }
       }
+
+      function closeDiv(){
+        document.getElementById("mydiv").style.display = "none";
+      }
       </script>
       
           </body>
 
           <div id="mydiv">
-            <div id="mydivheader"><p>Mario Game</p><button>X</button></div>
+            <div id="mydivheader"><p>Mario Game</p><button onclick="closeDiv">X</button></div>
             <iframe src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
           </div>
 
