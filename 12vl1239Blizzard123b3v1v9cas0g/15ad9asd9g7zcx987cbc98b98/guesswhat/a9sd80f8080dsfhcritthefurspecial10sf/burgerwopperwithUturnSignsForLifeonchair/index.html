@@ -45,9 +45,9 @@
   <button onclick="closeDiv">X</button>
   <div id="mydiv">
     <div id="mydivheader">hi</div>
-    <iframe src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
+    <iframe id="skibframe" src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
   </div>
-  
+
   <div style="display: flex; flex-direction: row;">
     <div style="flex: 1; padding: 8px;">
         
@@ -105,7 +105,7 @@
       }
 
       function closeDiv(){
-        document.getElementById("mydiv").style.display = "none";
+        document.getElementById("mydiv").style.visibility = "hidden";
       }
       </script>
       
