@@ -42,7 +42,8 @@
   </div>-->
   <h1>Blizzard for Christopher Novales</h1>
 
-  <button onclick="closeDiv">X</button>
+  <button onclick="changeSrc('')">Make it blank</button>
+  <button onclick="closeDiv">Close it</button>
   <div id="mydiv">
     <div id="mydivheader">hi</div>
     <iframe id="skibframe" src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
@@ -102,11 +103,14 @@
           document.onmouseup = null;
           document.onmousemove = null;
         }
+        function changeSrc(loc) {
+          document.getElementById('skibframe').src = loc;
+        }
       }
 
       function closeDiv(){
-        document.getElementById("skibframe").src = "about:blank";
-        document.getElementById("mydiv").style.visibility = "hidden";
+        document.getElementById('skibframe').src = 'about:blank';
+        document.getElementById('mydiv').style.visibility = 'hidden';
       }
       </script>
       
