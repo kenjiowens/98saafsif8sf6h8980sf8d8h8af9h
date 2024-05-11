@@ -32,6 +32,10 @@
         background-color: #052c4c;
         color: #fff;
       }
+      #mydivheader button {
+        float: right;
+        margin-right: 5px;
+      }
       </style>
 
 <center>
@@ -39,11 +43,10 @@
     <img id="disappearing" src="assets/imgs/FISHLINE.gif" style="width: 100%;">
   </div>-->
   <h1>Blizzard</h1>
-  <button onclick="closeDiv()">X</button>
 
   <div id="mydiv">
     
-    <div id="mydivheader"><span>Mario FPS</span></div>
+    <div id="mydivheader"><span>Mario FPS</span><button onclick="closeDiv()">X</button></div>
     <iframe id="skibframe" src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
   </div>
 
