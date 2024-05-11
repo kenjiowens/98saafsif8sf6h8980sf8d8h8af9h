@@ -9,6 +9,10 @@ body{
   margin:0;
 }
 
+.section {
+  display: inline-block;
+}
+
 .button {
   width: 100px;
   position: relative;
