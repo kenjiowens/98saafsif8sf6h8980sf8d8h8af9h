@@ -44,7 +44,7 @@
     <img id="disappearing" src="assets/imgs/FISHLINE.gif" style="width: 100%;">
   </div>-->
   <h1>Blizzard</h1>
-
+<button onclick="openDiv()">Open Div</button>
   <div id="mydiv">
     
     <div id="mydivheader"><span>Mario FPS</span><button onclick="closeDiv()">X</button></div>
@@ -108,6 +108,11 @@
         function changeSrc(loc) {
           document.getElementById('skibframe').src = loc;
         }
+      }
+
+      function openDiv(){
+        document.getElementById('skibframe').src = './assets/Games/mariofps.html';
+        document.getElementById('mydiv').style.visibility = 'visible';
       }
 
       function closeDiv(){
