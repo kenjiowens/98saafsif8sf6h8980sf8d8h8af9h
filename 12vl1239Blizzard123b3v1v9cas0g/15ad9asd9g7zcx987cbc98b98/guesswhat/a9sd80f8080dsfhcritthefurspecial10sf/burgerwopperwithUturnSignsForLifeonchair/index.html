@@ -44,11 +44,13 @@
     <img id="disappearing" src="assets/imgs/FISHLINE.gif" style="width: 100%;">
   </div>-->
   <h1>Blizzard</h1>
-<button onclick="openDiv()">Open Div</button>
+<button onclick="openDiv()">Mini Game Window</button>
   <div id="mydiv">
     
-    <div id="mydivheader"><span>Mario FPS</span><button onclick="closeDiv()">X</button></div>
-    <iframe id="skibframe" src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
+    <div id="mydivheader"><span id="windowtitle">Mario FPS</span><button onclick="closeDiv()">X</button></div>
+    <input class="textbox" type="text" style="z-index:10;" placeholder="Enter URL" id='input' autofocus>
+    <button class="button" style="vertical-align:middle; z-index:10;" onclick='changeURL()'><span>Go</span></button> 
+    <iframe id="skibframe" style="z-index:5;" src="./assets/Games/mariofps.html" width="640" height="480"></iframe>
   </div>
 
   <div style="display: flex; flex-direction: row;">
@@ -113,6 +115,10 @@
       function openDiv(){
         document.getElementById('skibframe').src = './assets/Games/mariofps.html';
         document.getElementById('mydiv').style.visibility = 'visible';
+      }
+
+      function changeURL(){
+        document.getElementById('skibframe').src = 'PLEASE CHANGE THIS THANKS';
       }
 
       function closeDiv(){
